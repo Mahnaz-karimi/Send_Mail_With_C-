@@ -2,7 +2,6 @@ using System;
 using System.Net.Mail;
 using Newtonsoft.Json.Linq;
 using System.Timers;
-using System.Configuration;
 
 namespace automatesend
 {
@@ -33,7 +32,7 @@ namespace automatesend
             Console.WriteLine("DB_HOST: " + DB_HOST);
 
 
-            List<string> mails = new List<string>() { "minexemple@gmail.com", "mahnaaz85@gmail.com" };
+            List<string> mails = new List<string>() { "minexemple@gmail.com", "mahnaaz2021@gmail.com" };
 
             try
             {
