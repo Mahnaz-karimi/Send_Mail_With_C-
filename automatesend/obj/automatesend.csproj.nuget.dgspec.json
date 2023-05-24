@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\automatesend.csproj": {}
+    "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\automatesend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\automatesend.csproj": {
+    "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\automatesend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\automatesend.csproj",
+        "projectUniqueName": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\automatesend.csproj",
         "projectName": "automatesend",
-        "projectPath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\automatesend.csproj",
+        "projectPath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\automatesend.csproj",
         "packagesPath": "C:\\Users\\mahna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\obj\\",
+        "outputPath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mahna\\AppData\\Roaming\\NuGet\\NuGet.Config",

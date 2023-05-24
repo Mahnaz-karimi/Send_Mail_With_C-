@@ -34,9 +34,10 @@
             // 
             // btnSendMail
             // 
-            btnSendMail.Location = new Point(395, 79);
+            btnSendMail.Location = new Point(451, 105);
+            btnSendMail.Margin = new Padding(3, 4, 3, 4);
             btnSendMail.Name = "btnSendMail";
-            btnSendMail.Size = new Size(75, 23);
+            btnSendMail.Size = new Size(86, 31);
             btnSendMail.TabIndex = 0;
             btnSendMail.Text = "SendMail";
             btnSendMail.UseVisualStyleBackColor = true;
@@ -45,21 +46,23 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(412, 61);
+            label1.Location = new Point(471, 81);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 1;
             label1.Text = "label1";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(label1);
             Controls.Add(btnSendMail);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }

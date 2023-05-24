@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y+7JXYSKLl5TmR5stNfEEUbmoXExZl5MUyKW93+BNHo9r/4sI0dBm9MH3BGyQJiN5cR4iTlLes5ruSzkONTsAw==",
+  "dgSpecHash": "oN9Uk4ABGWi1cMYH6mcTXzVFP/oXrYCe2eFouLRotVK1yfYPjSc/sDgk0m25bNlorAxvFYnOnjULMSSx4cgJYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\automatesend\\automatesend\\automatesend.csproj",
+  "projectFilePath": "C:\\Users\\mahna\\OneDrive\\Skrivebord\\AutomateSend\\automatesend\\automatesend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mahna\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
     "C:\\Users\\mahna\\.nuget\\packages\\mailkit\\4.0.0\\mailkit.4.0.0.nupkg.sha512",

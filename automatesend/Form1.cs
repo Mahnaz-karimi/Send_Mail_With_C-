@@ -7,16 +7,17 @@ namespace automatesend
 {
     public partial class Form1 : Form
     {
+        public static System.Timers.Timer newTimer = new System.Timers.Timer();
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void btnSendMail_Click(object sender, EventArgs e)
+        public void btnSendMail_Click(object sender, EventArgs e)
         {
 
-            // Specify the path to the json file
+            // Specify the path to the configuration file 
             string filePath = "C:/json/config.json";
 
             // Read the contents of the file
@@ -27,9 +28,6 @@ namespace automatesend
 
             // Extract values
             string DB_HOST = (string)data["DB_HOST"];
-
-            // print values
-            Console.WriteLine("DB_HOST: " + DB_HOST);
 
 
             List<string> mails = new List<string>() { "minexemple@gmail.com", "mahnaaz2021@gmail.com" };
@@ -48,7 +46,7 @@ namespace automatesend
                     mail.Subject = "subject";
                     mail.Body = "<h1>This is a body</h1>";
                     mail.IsBodyHtml = true;
-                    
+
 
                     using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                     {
@@ -68,8 +66,18 @@ namespace automatesend
             {
                 label1.Text = ex.Message;
             }
-             
-            
+
+
         }
+
+        public void Form1_Load(object sender, EventArgs e)
+        {
+            
+            newTimer.Interval = 100000; // starter eventes
+            newTimer.Elapsed += Form1_Load; // event for timer            
+            newTimer.Start();
+            btnSendMail_Click(null, null);
+        }
+    
     }
 }
