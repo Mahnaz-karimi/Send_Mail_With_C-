@@ -17,7 +17,9 @@ namespace automatesend
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Form1 myform = new Form1();
-            Application.Run(myform);      
+            Application.Run(myform);            
+            
+            
 
         }
         
