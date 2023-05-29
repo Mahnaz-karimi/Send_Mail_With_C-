@@ -30,6 +30,7 @@
         {
             btnSendMail = new Button();
             label1 = new Label();
+            btnmergeFile = new Button();
             SuspendLayout();
             // 
             // btnSendMail
@@ -52,11 +53,22 @@
             label1.TabIndex = 1;
             label1.Text = "label1";
             // 
+            // btnmergeFile
+            // 
+            btnmergeFile.Location = new Point(448, 229);
+            btnmergeFile.Name = "btnmergeFile";
+            btnmergeFile.Size = new Size(94, 29);
+            btnmergeFile.TabIndex = 2;
+            btnmergeFile.Text = "MergeFile";
+            btnmergeFile.UseVisualStyleBackColor = true;
+            btnmergeFile.Click += btnmergeFile_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnmergeFile);
             Controls.Add(label1);
             Controls.Add(btnSendMail);
             Margin = new Padding(3, 4, 3, 4);
@@ -67,9 +79,15 @@
             PerformLayout();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Button btnSendMail;
         private Label label1;
+        private Button btnmergeFile;
     }
 }

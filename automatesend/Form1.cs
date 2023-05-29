@@ -51,7 +51,7 @@ namespace automatesend
                     Console.WriteLine("List:");
                     for (int i = 0; i < people.Count; i++)
                     {
-                        
+
                         mail.To.Add((people[i].Email));
                         mail.Subject = "subject";
                         mail.Body = "<h1> Hej " + people[i].Name + "</h1>" + "<h2>" + "<br/>This is a " + listCont.randomText() + "</h2>";
@@ -82,12 +82,34 @@ namespace automatesend
 
         public void Form1_Load(object sender, EventArgs e)
         {
-            btnSendMail_Click(null, null);
-            newTimer.Interval = 10000; // starter eventes
+            
+            newTimer.Interval = 100000; // starter eventes
             newTimer.Elapsed += Form1_Load; // event for timer            
             newTimer.Start();
-            
+            //btnSendMail_Click(null, null);
+
+
         }
-        
+
+        private void btnmergeFile_Click(object sender, EventArgs e)
+        {
+            List<Person> l = listCont.getListOfPersons();
+            string outputPath = "C:\\Users\\mahna\\OneDrive\\Skrivebord\\OutputData.csv";
+            listCont.WriteCSV(l, outputPath);
+            // listCont.PerformMergeFromCSV();
+            //listCont.CreateCSVFromPersonList(listCont.getListOfPersons(), outputPath);
+            //listCont.ReadDatafromCSV();
+
+            List<Person> people = listCont.ReadCSV(outputPath);
+            Console.WriteLine("List of names from CSV:");
+            foreach (Person person in people)
+            {
+                Console.WriteLine(person.Name);
+            }
+            listCont.GenerateMergeFiles("C:\\Users\\mahna\\OneDrive\\Skrivebord\\MergeFiles\\", people);
+            Console.WriteLine("Merge file generated successfully!");
+        }
+
+
     }
 }
